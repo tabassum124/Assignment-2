@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+.container{
+    display: flex;
+
+}
+body{
+    font-family: 'Roboto Slab', serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.header{
+    width: 90%;;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+.heading{
+    font-size: 24px;
+}
+/* nav a{
+    text-decoration: none;
+    color:#252424;
+    margin-right: 25px;
+    font-size: 15px;
+} */
+
+.button{
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #E02C6D;
+border-radius: 41px;
+color: white;
+}
+
+.first-page{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.first-page h1{
+    font-size: 54px;
+    font-weight: 800;
+}
+.first-page p{
+    font-size: 17px;
+    font-weight: 600;
+    width: 65%;
+}
+
+.camera{
+    background-image: url(images/Circle\ design.svg);
+    background-size: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.catalogue{
+    align-items: center;
+    margin-left: 60px;
+}
+.catalogue h2{
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 40%;
+}
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 35px;
+}
+
+.item{
+    Width: 330px;
+    Height: 475px;
+    box-shadow: 10px 10px 30px gray;
+    border-radius:5px;
+}
+
+.item article{
+    padding: 18px;
+}
+
+.item article>h3{
+    margin: 0px;
+    font-size: 26px;
+    font-weight: 500;
+    color: #18191F;
+}
+
+.item img{
+    width: 300px;
+    height: 250px;
+}
+
+.price{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: #0a0a0c;
+}
+
+.stars{
+    color: #d87811f3;
+    size: 16px;
+}
+.description{
+    margin-top: 5px;
+    size: 14px;
+    font-weight: 700;
+    color: #7c7c85;
+}
+
+#next{
+    margin-left:80%;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #aa1a4f;
+}
+footer{
+    margin-top: 10px;
+    background-color:#0A0826;
+    color: white;
+    text-align: center;
+}
+.footer{
+    padding: 10px;
+}
+
+.footer h1{
+    font-size: 26px;
+}
+
+.footer p{
+    font-size: 14px;
+}
+.foot-link{
+    color: white;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+@media only screen and (max-width:922px) {
+    .body-section{
+        margin-left:18%;
+        width: 75%;
+    }
+    /* .nav-ex{
+        display: none;
+    } */
+
+    .first-page{
+       flex-direction: column;
+    }
+    .first-page-image{
+        margin-top: 30px;
+    }
+    .catalogue h2{
+        margin-left: 12%;
+    }
+    #next{
+        margin-left: 40%;
+    }
+    .items{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
